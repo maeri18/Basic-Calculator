@@ -26,4 +26,4 @@ def test_div_by_zero(calculator):
         try:
             calculator.div(10, 0)
         except Exception as e:
-            print("Error: division by zero:",e)
+            raise ValueError("Can't divide by zero")
